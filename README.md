@@ -227,6 +227,20 @@ log2fast-fastapi/
     └── test_new_features.py     # Feature tests
 ```
 
+## Acknowledgments
+
+This project uses the following open-source packages:
+
+- [FastAPI](https://github.com/tiangolo/fastapi) - Modern, fast web framework for building APIs (MIT License)
+- [Pydantic](https://github.com/pydantic/pydantic) - Data validation using Python type annotations (MIT License)
+- [Pydantic Settings](https://github.com/pydantic/pydantic-settings) - Settings management using Pydantic (MIT License)
+
+We are grateful to the maintainers and contributors of these projects for their excellent work.
+
 ## License
 
-Same as parent project.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+Copyright (c) 2026 Angel Daniel Sanchez Castillo
+
+**Note**: This package is designed and maintained by the Solautyc Team for internal use. While publicly available under MIT license, use at your own risk.
