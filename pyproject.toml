@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "log2fast-fastapi"
-version = "0.1.0"
+version = "0.1.1"
 description = "Advanced logging module for FastAPI - Designed for Solautyc Team internal use"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -27,17 +27,23 @@ classifiers = [
 ]
 
 dependencies = [
-    "fastapi>=0.100.0",
+    "fastapi[standard]>=0.135.1",
     "pydantic>=2.0.0",
     "pydantic-settings>=2.0.0",
 ]
 
-[project.optional-dependencies]
+[dependency-groups]
 dev = [
+    "black",
+    "ruff",
+    "mypy>=1.0.0",
+    "build",
+    "twine",
+]
+test = [
     "pytest>=7.0.0",
     "pytest-asyncio>=0.21.0",
     "httpx>=0.24.0",
-    "mypy>=1.0.0",
 ]
 
 [project.urls]
