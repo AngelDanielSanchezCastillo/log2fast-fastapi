@@ -2,6 +2,8 @@
 
 🚀 Advanced logging module for FastAPI with file rotation, colored output, and environment-based auto-configuration
 
+> 📖 **Conventions reference**: this package follows the [2fast-handbook](https://github.com/AngelDanielSanchezCastillo/2fast-handbook) for ecosystem conventions (structure, versioning, README, commits, release).
+
 > [!WARNING]
 > **Internal Use Notice**
 > 

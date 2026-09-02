@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "log2fast-fastapi"
-version = "0.1.2"
+dynamic = ["version"]
 description = "Advanced logging module for FastAPI - Designed for Solautyc Team internal use"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -58,6 +58,10 @@ package-dir = {"" = "src"}
 [tool.setuptools.packages.find]
 where = ["src"]
 include = ["log2fast_fastapi*"]
+
+# Single source of truth for the version: __version__.py
+[tool.setuptools.dynamic]
+version = {attr = "log2fast_fastapi.__version__.__version__"}
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
